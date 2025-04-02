@@ -52,7 +52,7 @@ function LoginForm() {
 
   return (
     <>
-      <section className="grid grid-cols-[repeat(auto-fit,minmax(375px,1fr))] h-screen bg-[rgb(243,244,246)]">
+      <section className="grid grid-cols-[repeat(auto-fit,minmax(375px,1fr))]  bg-[rgb(243,244,246)]">
         <div className="bg-[#fff] rounded-lg p-4 h-full ml-5 ">
           <AuthSidebar />
         </div>
