@@ -67,7 +67,7 @@ export default function Register() {
   return (
     <>
       {/* prettier-ignore */}
-      <section className="grid grid-cols-[repeat(auto-fit,minmax(375px,1fr))] bg-[rgb(243,244,246)] bg-fixed bg-cover bg-center bg-no-repeat h-[100%]">
+      <section className={`grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] bg-[rgb(243,244,246)] bg-fixed bg-cover bg-center bg-no-repeat h-[100%] ${errors.email || errors.password || errors.confirmPassword ? "max-[994px]:h-screen max-[994px]:pt-10" : "max-[994px]:h-screen max-[994px]:pt-15"} `}>
       <div className="bg-[#fff] rounded-lg p-4 h-full ml-5  lg:max-w-[992px] hidden lg:block">
           <AuthSidebar />
       </div>

@@ -11,6 +11,42 @@
 [role="button"] {
   cursor: pointer;
 }
+@media (max-width: 994px) {
+  .max-\[994px\]\:h-screen {
+    height: 100vh;
+  }
+}
+@media (max-width: 994px) {
+  .max-\[994px\]\:pt-15 {
+    padding-top: 3.75rem;
+  }
+}
+@media (max-width: 994px) {
+  .max-\[994px\]\:pt-10 {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .max-\[990px\]\:pt-25 {
+    padding-top: 6.25rem;
+  }
+}
+@media (max-width: 990px) {
+  .max-\[990px\]\:pt-26 {
+    padding-top: 6.5rem;
+  }
+}
+@media (max-width: 330px) {
+  .max-\[330px\]\:pt-0 {
+    padding-top: 0rem;
+  }
+}
+@media (max-width: 330px) {
+  .max-\[330px\]\:pt-10 {
+    padding-top: 2.5rem;
+  }
+}
 
 /* html,
 body {
