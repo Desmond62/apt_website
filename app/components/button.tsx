@@ -2,6 +2,7 @@ import React from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children?: React.ReactNode;
+
 }
 function Button({ children, className, ...props }: ButtonProps) {
   return (

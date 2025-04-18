@@ -4,51 +4,13 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
 :root {
   --bg-overlay: rgba(0, 0, 0, 0.8);
   --box-shadow: 00 0.4rem 0.4rem rgb(202, 233, 228);
 }
-[role="button"] {
-  cursor: pointer;
-}
-@media (max-width: 994px) {
-  .max-\[994px\]\:h-screen {
-    height: 100vh;
-  }
-}
-@media (max-width: 994px) {
-  .max-\[994px\]\:pt-15 {
-    padding-top: 3.75rem;
-  }
-}
-@media (max-width: 994px) {
-  .max-\[994px\]\:pt-10 {
-    padding-top: 2.5rem;
-  }
-}
-
-@media (max-width: 990px) {
-  .max-\[990px\]\:pt-25 {
-    padding-top: 6.25rem;
-  }
-}
-@media (max-width: 990px) {
-  .max-\[990px\]\:pt-26 {
-    padding-top: 6.5rem;
-  }
-}
-@media (max-width: 330px) {
-  .max-\[330px\]\:pt-0 {
-    padding-top: 0rem;
-  }
-}
-@media (max-width: 330px) {
-  .max-\[330px\]\:pt-10 {
-    padding-top: 2.5rem;
-  }
-}
-
-/* html,
+/* 
+html,
 body {
   @apply bg-white dark:bg-gray-950;
 
@@ -56,3 +18,26 @@ body {
     color-scheme: dark;
   }
 } */
+
+
+[role="button"] {
+  cursor: pointer;
+}
+
+/* Custom scrollbar width and color */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* change this to control the width */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1; /* optional */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* color of the scroll */
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

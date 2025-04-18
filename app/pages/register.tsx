@@ -1,11 +1,11 @@
 import { z } from "zod";
-import Input from "../shared/input";
+import Input from "../components/input";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
-import Button from "../shared/button";
+import Button from "../components/button";
 import { Link } from "react-router";
-import AuthSidebar from "../shared/authsidebar";
-import LoadingScreen from "~/shared/loadingscreen";
+import AuthSidebar from "../components/authsidebar";
+import LoadingScreen from "../components/loadingscreen";
 
 export const loader = null;
 // const registerBG = "#FFF";

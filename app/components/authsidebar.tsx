@@ -1,6 +1,7 @@
 import { Link } from "react-router";
 
 function AuthSidebar() {
+
   return (
     <>
       <div className="p-[3rem] ">

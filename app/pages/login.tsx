@@ -1,12 +1,12 @@
-import Input from "../shared/input";
-import AuthSidebar from "../shared/authsidebar";
+import Input from "../components/input";
+import AuthSidebar from "../components/authsidebar";
 import { Link } from "react-router";
-import Button from "../shared/button";
+import Button from "../components/button";
 import { z } from "zod";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
-import LoadingScreen from "~/shared/loadingscreen";
+import LoadingScreen from "../components/loadingscreen";
 const errorStyle = "text-red-500 text-[12px]";
 const paddingX = "px-8";
 
@@ -53,7 +53,7 @@ function LoginForm() {
   return (
     <>
       <section
-        className={`grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] bg-[rgb(243,244,246)] bg-fixed bg-cover bg-center bg-no-repeat h-[100%] ${
+        className={`grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] bg-[rgb(243,244,246)] bg-fixed bg-cover bg-center bg-no-repeat h-[100vh] ${
           errors.email || errors.password
             ? "max-[994px]:h-screen max-[990px]:pt-26"
             : "max-[994px]:h-screen max-[990px]:pt-25"
